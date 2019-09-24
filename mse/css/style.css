@@ -1,0 +1,513 @@
+///*************************Product owner info********************************
+///
+///     author               : Boonexpert
+///     contact info         : boonexpert@gmail.com
+///
+///*************************Product info**************************************
+///
+///                          Master String Editor + Email templates editor
+///                          -----------------------------------------------------
+///     version              : 2.1
+///     date		   : 22 December 2011
+///    compability          : Dolphin 7.0.x
+///    License type         : Custom
+///
+/// IMPORTANT: This is a commercial product made by Boonexpert and cannot be modified for other than personal use.
+/// This product cannot be redistributed for free or a fee without written permission from Boonexpert.
+///
+///     Upgrade possibilities : All future upgrades will be added to this product package
+///
+///****************************************************************************/
+
+
+body{
+background:url('../images/bg.png')
+font-family: Arial;
+}
+
+input{
+  border:solid 1px #c9d7f1;
+}
+
+img{
+  border:none;
+}
+
+select{
+-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.valuesbar{
+  clear: both;
+  height: 30px;
+  line-height: 30px;
+  background: #FAFAFA;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.addonright{
+  border-radius: 0 4px 4px 0 !important;
+  right: 28px;
+  position: relative;
+}
+
+.langnamebar{
+  display: inline;
+  bottom: 5px;
+  position: relative;
+  margin: 0 10px 0 0;
+}
+
+.langvaldiv{
+  clear:both;
+  text-align:right;
+}
+
+.langvaldiv textarea{
+  width: 420px;
+  height: 70px; 
+}
+
+.copytoall{
+  position: relative;
+  top: 70px;
+  left: 0;
+/*   text-align: left; */
+}
+
+.alert{
+  z-index:9999;
+  opacity: 0.9 !important;
+  top: 60px;
+  left: 20%;
+  position: absolute;
+  width: 370px;
+  display:none;
+}
+
+.saveimg{
+  cursor:pointer;
+}
+
+.catselect{
+  position: absolute;
+  top: 64px;
+  right: 30px;
+}
+
+.fastlinks{
+  position: relative;
+  float: right;
+  bottom: 34px;
+}
+
+.mLangSel{
+  font-size:14px !important;
+  color:#555;
+  text-decoration:none;
+}
+
+.mLangSel:hover{
+  text-decoration:underline;
+}
+
+.lang_active{
+  text-decoration:underline;
+  font-weight:bold;
+}
+
+div.grippie {
+  background:#FFFFFF url('../images/grippie.png') no-repeat scroll center 2px;
+  border:solid 1px #DDDDDD;
+  cursor:s-resize;
+  height:9px;
+  overflow:hidden;
+}
+
+.table td {
+  height: 35px !important;
+  line-height: 35px !important;
+  padding:0 5px 0 5px;
+  vertical-align: middle;
+}
+
+.table-striped img{
+  height:21px; 
+}
+
+
+.pages{
+  font-size: 14px;
+  color: black;
+  font-family:Arial;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9', endColorstr='#E9E9E9');
+  background-color: #F9F9F9;
+  background-image: -moz-linear-gradient(top, #F9F9F9, #E9E9E9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#F9F9F9), to(#E9E9E9));
+  background-image: -webkit-linear-gradient(top, #F9F9F9, #E9E9E9);
+  background-image: -o-linear-gradient(top, #F9F9F9, #E9E9E9);
+  background-image: linear-gradient(to bottom, #F9F9F9, #E9E9E9);
+  
+  border: solid 1px #BCBCBC;
+  border-radius: 3px;
+  width: 25px;
+  position: relative;
+  float: left;
+  padding: 6px 2px 12px 2px;
+  height: 18px;
+  cursor: pointer;
+  margin-left: 7px;
+  margin-top: 7px;
+}
+.pages:hover{
+  color: #222;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e0e0', endColorstr='#616161');
+  background-image: -moz-linear-gradient(top, #e0e0e0, #f9f9f9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e0e0e0), to(#f9f9f9));
+  background-image: -webkit-linear-gradient(top, #e0e0e0, #f9f9f9);
+  background-image: -o-linear-gradient(top, #e0e0e0, #f9f9f9);
+  background-image: linear-gradient(to bottom, #e0e0e0, #f9f9f9);
+  background-color: #f0f0f0;
+  
+}
+
+.dropdown-menu > li > a {
+  padding-left: 10px;
+}
+
+.dropdown .dropdown-menu .nav-header {
+  padding-left: 12px;
+/*   text-align:center; */
+}
+
+.infoi{
+  font-family: times new roman;
+  color: #FFF;
+  font-weight: bolder;
+  margin-right: 10px;
+  font-style: italic;
+}
+
+.dropdown-menu > .active > a{
+  background-color: #AFAFAF;
+  background-image: -moz-linear-gradient(top, #DDD, #AFAFAF);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#DDD), to(#AFAFAF));
+  background-image: -webkit-linear-gradient(top, #DDD, #AFAFAF);
+  background-image: -o-linear-gradient(top, #DDD, #AFAFAF);
+  background-image: linear-gradient(to bottom, #DDD, #AFAFAF);
+  background-repeat: repeat-x;
+  outline: 0;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DDD', endColorstr='#AFAFAF', GradientType=0);
+}
+
+
+.langselect{
+/*   background: url('../images/selector.png') no-repeat; */
+  background: #FFF;
+  width: 196px;
+  height: 36px;
+  border: solid 1px #DDD;
+  cursor:pointer;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+
+
+.pageact{
+  border-color: #19558D;
+  background-color: #4F8AE4;
+  background-image: -moz-linear-gradient(top, #4F8AE4, #4278CB);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4F8AE4), to(#4278CB));
+  background-image: -webkit-linear-gradient(top, #4F8AE4, #4278CB);
+  background-image: -o-linear-gradient(top, #4F8AE4, #4278CB);
+  background-image: linear-gradient(to bottom, #4F8AE4, #4278CB);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4F8AE4', endColorstr='#4278CB');
+  color:#FFF;
+}
+
+.font_error{
+  font-family:Arial;
+  font-size:16px;
+  color:#f00;
+  font-weight:bold;
+}
+
+.font_info{
+  font-family:Arial;
+  font-size:14px;
+  color:#000;
+}
+
+.links_popup{
+  font-family:Arial;
+  font-size:14px;
+  color:#555;
+  text-decoration:none;
+}
+
+.links_popup:hover{
+  font-family:Arial;
+  font-size:14px;
+  color:#555;
+  text-decoration:underline;
+}
+
+/*.main_page_inf{
+  padding-top: 40px;
+  height: 20px;
+  width: 100%;
+}*/
+
+.left_info_td{
+  width:150px;
+}
+
+.info_column_td{
+  vertical-align: top;
+  font-size: 14px;
+  padding: 0 10px 0 0;
+}
+
+.headerlangs{
+  position: relative;
+  float: right;
+}
+
+.header{
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEAEF', endColorstr='#FAFAFA');
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#EEEAEF), to(#FAFAFA));
+  background-image: -moz-linear-gradient(#EEEAEF, #FAFAFA);
+  border-bottom:solid 1px #c9d7f1;
+}
+
+.logindiv {
+  background: #FFF;
+  position: relative;
+  top: 130px;
+  width: 500px;
+  border: solid 1px #EEE;
+  margin: 0 auto;
+  border-radius: 14px;
+}
+
+#inputEmail,
+#inputPassword {
+  height: 27px;
+}
+
+.tooltip{
+  font-weight:bold;
+}
+
+.login_screen{
+  font-family:Arial;
+  font-size:14px;
+  font-weight:bold;
+  color:#6d84b4;
+
+}
+.title_td{
+  background-color: #F6F7F9;
+  height: 50px;
+  padding: 0 0 0 20px;
+  font-family: Arial;
+  font-size: 20px;
+  color: #555;
+  border-bottom: double 4px #CCC;
+}
+
+.key_td_odd{
+  width:200px;
+  font-family:Arial;
+  font-size:12px;
+  border:solid 1px #ddd;
+  vertical-align:top;
+  background:#FFFFFF;
+}
+
+.params1{
+  padding: 20px 10px 10px 20px;
+}
+
+.srchrestext{
+  color: #3B5998;
+  position: absolute;
+  top: 97px;
+  left: 20px;
+}
+
+.filelist{
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  color:#555;
+  text-decoration:none;
+}
+
+.key_td_even{
+  background:#f3f3f3;
+  width:200px;
+  font-family:Arial;
+  font-size:12px;
+  border:solid 1px #fff;
+  vertical-align:top;
+}
+
+.orig_td_odd{
+  width:auto;
+  font-family:Arial;
+  font-size:12px;
+  border:solid 1px #ddd;
+vertical-align:top;
+background: #FFFFFF;
+}
+
+.orig_td_even{
+  background:#F5F5F5;
+  width:auto;
+  font-family:Arial;
+  font-size:12px;
+  border:solid 2px #fff;
+vertical-align:top;
+}
+
+.trans_td_odd{
+  width:auto;
+  font-family:Arial;
+  font-size:12px;
+  border:solid 1px #ddd;
+vertical-align:top;
+background: #FFFFFF;
+}
+
+.trans_td_even{
+  background:#f3f3f3;
+  width:auto;
+  font-family:Arial;
+  font-size:12px;
+  border:solid 1px #fff;
+vertical-align:top;
+}
+
+.msg{
+  font-family:Arial;
+  font-size:14px;
+  font-weight:bold;
+  color:#555;
+}
+
+.title{
+background-color: #FAFAFA;
+background-image: -moz-linear-gradient(top, #FFF, #F2F2F2);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFF), to(#F2F2F2));
+background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
+background-image: -o-linear-gradient(top, #FFF, #F2F2F2);
+background-image: linear-gradient(to bottom, #FFF, #F2F2F2);
+  width:auto;
+  font-family:Arial;
+  font-size:14px;
+  font-weight:bold;
+  border: solid 1px #DADADA;
+  text-align:center;
+  vertical-align:top;
+  color:#555;
+  line-height: 45px;
+}
+
+.head_link_show{
+  font-family:Arial;
+  font-size:14px;
+  color:#6d84b4;
+}
+
+.input-prepend{
+  top: 3px;
+  position: relative;
+}
+
+
+
+.head_shorts{
+  float: right !important;
+}
+.dropdown,
+.navbar .nav li{
+  line-height: 25px;
+}
+
+
+.navbar{
+  z-index: 999;
+  position:fixed;
+  top:0px;
+  width:100%;
+}
+
+.head_link{
+  font-family:Arial;
+  font-size:14px;
+  color: #6D84B4 !important;
+  width: 164px;
+  height: 27px;
+  padding-top: 9px;
+  position: relative;
+  float: left;
+  text-align: center;
+  cursor:pointer;
+}
+
+.head_link:hover{
+  background:url('../images/btnact.png');
+}
+
+.divsrchbtn{
+  position: relative;
+  top: -38px;
+  right: 0px;
+  height: 41px;
+  width: 41px;
+}
+
+.srchbar{
+  background:url('../images/srchbar.png');
+  height: 36px;
+  width: 300px;
+  border: none;
+  padding: 0 60px 0 10px;
+}
+
+.head_link_pas{
+  background:url('../images/btn.png');
+}
+
+.head_link_act{
+  background:url('../images/btnact.png');
+  font-weight:bold;
+}
+
+.params{
+  text-align:left;
+  width:520px;
+  font-family:Arial;
+  font-size:14px;
+  color:#ffffff;
+  vertical-align:top;
+}
+
+.copybox{
+  vertical-align:top;
+  text-align:center;
+  border-bottom:solid 1px #ddd;
+  width:10px;
+background: #FFFFFF;
+}
+
+.btn_arrow{
+  cursor:pointer;
+}

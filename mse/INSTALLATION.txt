@@ -1,0 +1,71 @@
+///*************************Product owner info********************************
+///
+///     author               : Boonexpert
+///     contact info         : boonexpert@gmail.com
+///
+///*************************Product info**************************************
+///
+///                          Master String Editor + Email templates editor
+///                          -----------------------------------------------------
+///     version              : 3.0
+///     date		    : 24 September 2019
+///    compability          : Dolphin 7.4.x
+///    License type         : Custom
+///
+/// IMPORTANT: This is a commercial product made by Boonexpert and cannot be modified for other than personal use.
+/// This product cannot be redistributed for free or a fee without written permission from Boonexpert.
+///
+///     Upgrade possibilities : All future upgrades will be added to this product package
+///
+///****************************************************************************/
+
+Installation of Master String Editor
+++++++++++++++++++++++++++++++++++++++++++
+
+1. Create empty directory (for example, 'mse') in the Dolphin root directory
+
+2. Copy all String Editor files in created directory
+
+3. Set permissions (chmod 0777) for next directories:
+
+  - langs
+  - langs/php
+  - langs/csv
+  - langs/xml
+  - tmp
+
+
+4. Open page http://[yoursite].com/[mse_directory]/ in your browser and login with your Dolphin admin username and password
+
+5. Select source language at the left column and destination language at the right column
+
+6. Select category (module) to edit from drop-down list
+
+7. To edit e-mail templates select 'E-mail templates' at the top left
+
+8. !!! When editing email templates with the visual editor please pay attention that some modules can have their own variables that look like
+html <tags>. You have to add them to back-replacing list in the file "view_email.php" following exising examples there.
+
+9. To search in Email templates mode, choose Source Language to search in first.
+
+10. Most of the email templates are stored under "Default" language. To show all templates choose "Default" in the "Source Language" selector.
+
+
+Permanent link to the module on Boonex: http://www.boonex.com/m/Master_String_Editor_v_1_0
+
+Support forum: http://www.boonex.com/forums/topic/Master-Language-String-Editor-Support-Forum-2011-02-25-0.htm
+
+Support e-mail: boonexpert@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+

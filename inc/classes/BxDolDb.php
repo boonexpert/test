@@ -640,9 +640,9 @@ class BxDolDb extends BxDolFactory implements iBxDolSingleton
             if ($bForceCacheInvalidate)
                 $this->cacheParamsClear($sCacheNameMixed);
 
-            $aMixed = $this->fromCache($sCacheNameMixed, 'getPairs', "SELECT `tmo`.`option` AS `option`, `tmo`.`value` AS `value` FROM `sys_options_mixes2options` AS `tmo` INNER JOIN `sys_options_mixes` AS `tm` ON `tmo`.`mix_id`=`tm`.`id` AND `tm`.`type`=:type AND `tm`.`active`='1'", "option", "value", array(
-                'type' => $sTmplName
-            ));
+//            $aMixed = $this->fromCache($sCacheNameMixed, 'getPairs', "SELECT `tmo`.`option` AS `option`, `tmo`.`value` AS `value` FROM `sys_options_mixes2options` AS `tmo` INNER JOIN `sys_options_mixes` AS `tm` ON `tmo`.`mix_id`=`tm`.`id` AND `tm`.`type`=:type AND `tm`.`active`='1'", "option", "value", array(
+//                'type' => $sTmplName
+//            ));
             if(!empty($aMixed))
                 self::$_aParams = array_merge(self::$_aParams, $aMixed);
         }
@@ -1077,7 +1077,7 @@ class BxDolDb extends BxDolFactory implements iBxDolSingleton
         $bResult = false;
 
         try {
-            $bResult = $oStatement->execute(!empty($aBindings) && is_array($aBindings) ? $aBindings : null);
+//            $bResult = $oStatement->execute(!empty($aBindings) && is_array($aBindings) ? $aBindings : null);
         }
         catch (PDOException $oException) {
             $aError = $oStatement->errorInfo();
